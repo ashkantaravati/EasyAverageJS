@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "EasyAverage.js",
+    "version": "1.1",
+    "description":"This extension calculates your average score instantly in stu.iauctb.ac.ir/eteraz_nomreh.aspx | developed by Ashkan Taravati",
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+ "icons": {
+    "48": "icon.png"
+  },
+          
+	"js": ["EasyAverage.js"]
+        }
+      ],
+      "browser_action": {
+        "default_icon": "icon.png"
+      },
+      "background": {
+        "scripts": ["background.js"]
+      }
+  }
